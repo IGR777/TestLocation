@@ -1,0 +1,208 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectTypeGuids>{EFBA0AD7-5A72-4C68-AF49-83D382785DCF};{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}</ProjectTypeGuids>
+    <ProjectGuid>{BE7CC97C-05D8-445B-9EE4-C1131299B086}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <RootNamespace>TestLocation.Droid</RootNamespace>
+    <MonoAndroidAssetsPrefix>Assets</MonoAndroidAssetsPrefix>
+    <MonoAndroidResourcePrefix>Resources</MonoAndroidResourcePrefix>
+    <AndroidManifest>Properties\AndroidManifest.xml</AndroidManifest>
+    <AndroidResgenClass>Resource</AndroidResgenClass>
+    <AndroidResgenFile>Resources\Resource.designer.cs</AndroidResgenFile>
+    <AndroidApplication>True</AndroidApplication>
+    <AndroidUseLatestPlatformSdk>True</AndroidUseLatestPlatformSdk>
+    <AssemblyName>TestLocation.Droid</AssemblyName>
+    <TargetFrameworkVersion>v6.0</TargetFrameworkVersion>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug</OutputPath>
+    <DefineConstants>DEBUG;</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <AndroidLinkMode>None</AndroidLinkMode>
+    <ConsolePause>false</ConsolePause>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>full</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release</OutputPath>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <AndroidUseSharedRuntime>false</AndroidUseSharedRuntime>
+    <ConsolePause>false</ConsolePause>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Core" />
+    <Reference Include="Mono.Android" />
+    <Reference Include="Xamarin.Android.Support.v4">
+      <HintPath>..\packages\Xamarin.Android.Support.v4.23.1.1.0\lib\MonoAndroid403\Xamarin.Android.Support.v4.dll</HintPath>
+    </Reference>
+    <Reference Include="Xamarin.Android.Support.v7.AppCompat">
+      <HintPath>..\packages\Xamarin.Android.Support.v7.AppCompat.23.1.1.0\lib\MonoAndroid403\Xamarin.Android.Support.v7.AppCompat.dll</HintPath>
+    </Reference>
+    <Reference Include="Xamarin.Android.Support.v7.RecyclerView">
+      <HintPath>..\packages\Xamarin.Android.Support.v7.RecyclerView.23.1.1.0\lib\MonoAndroid403\Xamarin.Android.Support.v7.RecyclerView.dll</HintPath>
+    </Reference>
+    <Reference Include="Xamarin.Android.Support.Design">
+      <HintPath>..\packages\Xamarin.Android.Support.Design.23.1.1.0\lib\MonoAndroid403\Xamarin.Android.Support.Design.dll</HintPath>
+    </Reference>
+    <Reference Include="MvvmCross.Platform.Droid">
+      <HintPath>..\packages\MvvmCross.Platform.4.0.0\lib\MonoAndroid\MvvmCross.Platform.Droid.dll</HintPath>
+    </Reference>
+    <Reference Include="MvvmCross.Platform">
+      <HintPath>..\packages\MvvmCross.Platform.4.0.0\lib\MonoAndroid\MvvmCross.Platform.dll</HintPath>
+    </Reference>
+    <Reference Include="MvvmCross.Plugins.Visibility">
+      <HintPath>..\packages\MvvmCross.Plugin.Visibility.4.0.0\lib\MonoAndroid\MvvmCross.Plugins.Visibility.dll</HintPath>
+    </Reference>
+    <Reference Include="MvvmCross.Plugins.Visibility.Droid">
+      <HintPath>..\packages\MvvmCross.Plugin.Visibility.4.0.0\lib\MonoAndroid\MvvmCross.Plugins.Visibility.Droid.dll</HintPath>
+    </Reference>
+    <Reference Include="MvvmCross.Droid">
+      <HintPath>..\packages\MvvmCross.Core.4.0.0\lib\MonoAndroid\MvvmCross.Droid.dll</HintPath>
+    </Reference>
+    <Reference Include="MvvmCross.Core">
+      <HintPath>..\packages\MvvmCross.Core.4.0.0\lib\MonoAndroid\MvvmCross.Core.dll</HintPath>
+    </Reference>
+    <Reference Include="Newtonsoft.Json">
+      <HintPath>..\packages\Newtonsoft.Json.8.0.2\lib\portable-net40+sl5+wp80+win8+wpa81\Newtonsoft.Json.dll</HintPath>
+    </Reference>
+    <Reference Include="MvvmCross.Plugins.Json">
+      <HintPath>..\packages\MvvmCross.Plugin.Json.4.0.0\lib\MonoAndroid\MvvmCross.Plugins.Json.dll</HintPath>
+    </Reference>
+    <Reference Include="MvvmCross.Droid.Support.V7.Fragging">
+      <HintPath>..\packages\MvvmCross.Droid.Support.V7.Fragging.4.0.0\lib\MonoAndroid403\MvvmCross.Droid.Support.V7.Fragging.dll</HintPath>
+    </Reference>
+    <Reference Include="MvvmCross.Droid.Support.Design">
+      <HintPath>..\packages\MvvmCross.Droid.Support.Design.4.0.0\lib\MonoAndroid403\MvvmCross.Droid.Support.Design.dll</HintPath>
+    </Reference>
+    <Reference Include="MvvmCross.Binding.Droid">
+      <HintPath>..\packages\MvvmCross.Binding.4.0.0\lib\MonoAndroid\MvvmCross.Binding.Droid.dll</HintPath>
+    </Reference>
+    <Reference Include="MvvmCross.Binding">
+      <HintPath>..\packages\MvvmCross.Binding.4.0.0\lib\MonoAndroid\MvvmCross.Binding.dll</HintPath>
+    </Reference>
+    <Reference Include="MvvmCross.Localization">
+      <HintPath>..\packages\MvvmCross.Binding.4.0.0\lib\MonoAndroid\MvvmCross.Localization.dll</HintPath>
+    </Reference>
+    <Reference Include="Mono.Android.Export" />
+    <Reference Include="MvvmCross.Plugins.Messenger">
+      <HintPath>..\packages\MvvmCross.Plugin.Messenger.4.0.0\lib\MonoAndroid\MvvmCross.Plugins.Messenger.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\TestLocation\TestLocation.csproj">
+      <Project>{85DE5D5D-323D-48FE-BEB8-98B5C8EDA920}</Project>
+      <Name>TestLocation</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Resources\Resource.designer.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Setup.cs" />
+    <Compile Include="SplashScreen.cs" />
+    <Compile Include="Views\MainView.cs" />
+    <Compile Include="Services\LocationTrackingService.cs" />
+    <Compile Include="Interfaces\IPermissionable.cs" />
+    <Compile Include="Converters\StateValueConverter.cs" />
+    <Compile Include="Controls\BindableImageView.cs" />
+    <Compile Include="Bootstrap\VisibilityPluginBootstrap.cs" />
+    <Compile Include="Converters\TemperatureVisibilityValueConverter.cs" />
+    <Compile Include="Converters\TemperatureValueConverter.cs" />
+    <Compile Include="Bootstrap\JsonPluginBootstrap.cs" />
+    <Compile Include="Bootstrap\MessengerPluginBootstrap.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\AboutResources.txt" />
+    <None Include="Properties\AndroidManifest.xml" />
+    <None Include="Assets\AboutAssets.txt" />
+    <None Include="packages.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidResource Include="Resources\layout\Main.axml" />
+    <AndroidResource Include="Resources\values\Strings.xml" />
+    <AndroidResource Include="Resources\mipmap-hdpi\Icon.png" />
+    <AndroidResource Include="Resources\mipmap-mdpi\Icon.png" />
+    <AndroidResource Include="Resources\mipmap-xhdpi\Icon.png" />
+    <AndroidResource Include="Resources\mipmap-xxhdpi\Icon.png" />
+    <AndroidResource Include="Resources\mipmap-xxxhdpi\Icon.png" />
+    <AndroidResource Include="Resources\layout\SplashScreen.axml" />
+    <AndroidResource Include="Resources\drawable-hdpi\sun.png" />
+    <AndroidResource Include="Resources\drawable-mdpi\sun.png" />
+    <AndroidResource Include="Resources\drawable-xhdpi\sun.png" />
+    <AndroidResource Include="Resources\drawable-xxhdpi\sun.png" />
+    <AndroidResource Include="Resources\drawable-xxxhdpi\sun.png" />
+    <AndroidResource Include="Resources\drawable-hdpi\sun_clouds.png" />
+    <AndroidResource Include="Resources\drawable-mdpi\sun_clouds.png" />
+    <AndroidResource Include="Resources\drawable-xhdpi\sun_clouds.png" />
+    <AndroidResource Include="Resources\drawable-xxhdpi\sun_clouds.png" />
+    <AndroidResource Include="Resources\drawable-xxxhdpi\sun_clouds.png" />
+    <AndroidResource Include="Resources\drawable-hdpi\clouds.png" />
+    <AndroidResource Include="Resources\drawable-mdpi\clouds.png" />
+    <AndroidResource Include="Resources\drawable-xhdpi\clouds.png" />
+    <AndroidResource Include="Resources\drawable-xxhdpi\clouds.png" />
+    <AndroidResource Include="Resources\drawable-xxxhdpi\clouds.png" />
+    <AndroidResource Include="Resources\drawable-hdpi\rain.png" />
+    <AndroidResource Include="Resources\drawable-mdpi\rain.png" />
+    <AndroidResource Include="Resources\drawable-xhdpi\rain.png" />
+    <AndroidResource Include="Resources\drawable-xxhdpi\rain.png" />
+    <AndroidResource Include="Resources\drawable-xxxhdpi\rain.png" />
+    <AndroidResource Include="Resources\drawable-hdpi\thunderstorm.png" />
+    <AndroidResource Include="Resources\drawable-mdpi\thunderstorm.png" />
+    <AndroidResource Include="Resources\drawable-xhdpi\thunderstorm.png" />
+    <AndroidResource Include="Resources\drawable-xxhdpi\thunderstorm.png" />
+    <AndroidResource Include="Resources\drawable-xxxhdpi\thunderstorm.png" />
+    <AndroidResource Include="Resources\drawable-hdpi\snow.png" />
+    <AndroidResource Include="Resources\drawable-mdpi\snow.png" />
+    <AndroidResource Include="Resources\drawable-xhdpi\snow.png" />
+    <AndroidResource Include="Resources\drawable-xxhdpi\snow.png" />
+    <AndroidResource Include="Resources\drawable-xxxhdpi\snow.png" />
+    <AndroidResource Include="Resources\drawable-hdpi\mist.png" />
+    <AndroidResource Include="Resources\drawable-mdpi\mist.png" />
+    <AndroidResource Include="Resources\drawable-xhdpi\mist.png" />
+    <AndroidResource Include="Resources\drawable-xxhdpi\mist.png" />
+    <AndroidResource Include="Resources\drawable-xxxhdpi\mist.png" />
+    <AndroidResource Include="Resources\drawable\clouds.png" />
+    <AndroidResource Include="Resources\drawable\mist.png" />
+    <AndroidResource Include="Resources\drawable\rain.png" />
+    <AndroidResource Include="Resources\drawable\snow.png" />
+    <AndroidResource Include="Resources\drawable\sun.png" />
+    <AndroidResource Include="Resources\drawable\sun_clouds.png" />
+    <AndroidResource Include="Resources\drawable\thunderstorm.png" />
+    <AndroidResource Include="Resources\drawable-hdpi\question.png" />
+    <AndroidResource Include="Resources\drawable-mdpi\question.png" />
+    <AndroidResource Include="Resources\drawable-xhdpi\question.png" />
+    <AndroidResource Include="Resources\drawable-xxhdpi\question.png" />
+    <AndroidResource Include="Resources\drawable-xxxhdpi\question.png" />
+    <AndroidResource Include="Resources\values-mdpi\styles.xml" />
+    <AndroidResource Include="Resources\values-hdpi\styles.xml" />
+    <AndroidResource Include="Resources\values-xhdpi\styles.xml" />
+    <AndroidResource Include="Resources\values-xxhdpi\styles.xml" />
+    <AndroidResource Include="Resources\values-xxxhdpi\styles.xml" />
+  </ItemGroup>
+  <Import Project="$(MSBuildExtensionsPath)\Xamarin\Android\Xamarin.Android.CSharp.targets" />
+  <ItemGroup>
+    <Folder Include="Services\" />
+    <Folder Include="Interfaces\" />
+    <Folder Include="Resources\drawable-hdpi\" />
+    <Folder Include="Resources\drawable-mdpi\" />
+    <Folder Include="Resources\drawable-xhdpi\" />
+    <Folder Include="Resources\drawable-xxhdpi\" />
+    <Folder Include="Resources\drawable-xxxhdpi\" />
+    <Folder Include="Converters\" />
+    <Folder Include="Controls\" />
+    <Folder Include="Resources\values-hdpi\" />
+    <Folder Include="Resources\values-mdpi\" />
+    <Folder Include="Resources\values-xhdpi\" />
+    <Folder Include="Resources\values-xxhdpi\" />
+    <Folder Include="Resources\values-xxxhdpi\" />
+  </ItemGroup>
+</Project>
